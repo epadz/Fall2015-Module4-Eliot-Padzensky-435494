@@ -1,0 +1,13 @@
+import re
+
+sreg = re.compile(r"^([\w\s]+)?(\sbatted\s)(\d+)(\stimes\swith\s)(\d+)(\shits\sand\s)(\d+)(\sruns)$")
+
+f = open("baseball/cardinals-1940.txt")
+
+for line in f:
+    l = line.rstrip()
+    match = sreg.match(l)
+    if match:
+        print "good"
+    else:
+        print "no"

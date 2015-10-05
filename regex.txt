@@ -1,0 +1,3 @@
+\b(hello world)\b
+(\w*([aeiou]{3})\w*)
+\b(AA)\d{3,4}\b
